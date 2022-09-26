@@ -1,0 +1,42 @@
+%!
+
+/cm {
+    28.3464567 mul
+} def             % définit cm comme "28.3464567 mul"
+2 cm ==        % calcule 2*28.3464567 (le nombre de points dans 2 centimètres)
+56.6929131
+/repere {
+    /Arial findfont
+    .5 cm scalefont
+    setfont
+    newpath
+    0 0 moveto
+    1 cm 0 lineto
+    (x) show
+    0 0 moveto
+    0 1 cm lineto
+    (y) show
+    stroke
+} def
+
+repere
+
+5 cm 2 cm translate % déplace l'origine du repère
+
+repere
+
+45 rotate % tourne le repère de 45°
+2 2 scale % le réduit de 2 fois en largeur et en hauteur
+
+repere
+
+0 2 cm translate % déplace l'origine du repère
+
+repere
+
+0 2 10 {  % de 0 à 10 inclus, par pas de 2, la valeur est empilée,
+    ==       % le code est exécuté (ici, dépiler et afficher)
+} for
+
+
+showpage % fin du programme

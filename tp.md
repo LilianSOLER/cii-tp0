@@ -37,7 +37,19 @@ x, sin(x)
 
 1. En quoi consistent les distances sémantiques à l'exécution et à l'interprétation pour ce programme ?
 
+- Un utilisateur lambda ne saura comment utiliser ce programme car il n'y a aucune indication
+
 2. Réduisez la distance sémantique à l'exécution en gérant mieux les erreurs, et en fournissant un message indiquant comment utiliser le programme.
+
 
 3. Enrichissez le programme en permettant le passage d'autres paramètres par la ligne de commande (xmin, xmax, etc.)
 
+
+---
+## Graphique 2D
+
+Les interfaces graphiques utilisent un modèle graphique permettant de dessiner à l'écran. En dehors d'usages particuliers, ce modèle est à deux dimensions (2D) et utilise une géométrie affine. Pour nous familiariser avec ce type de modèle, nous allons utiliser le langage [PostScript](http://www.adobe.com/products/postscript/).
+
+4. Familiarisez-vous avec le langage PostScript en suivant cette [introduction à PostScript](http://iihm.imag.fr/blanch/howtos/PostScript.html).
+
+### Sortie graphique

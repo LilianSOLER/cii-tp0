@@ -1,0 +1,22 @@
+%!
+(zero) % empile la chaîne "zero" dans la pile
+1 % empile le nombre 1 dans la pile
+pstack % affiche la pile
+
+dup % duplique le sommet de la pile
+pstack
+
+pop % enlève le sommet de la pile (et le perd)
+pstack
+
+2 (trois) pstack % 2 empilements et 1 affichage enchaînés
+
+clear % vide la pile (noter l'invite à la ligne suivante)
+
+1 2 add % empile 1 puis 2 puis les utilise pour une addition et empile le résultat
+pstack
+
+4 5 add mul % (4+5)*3, le 3 étant récupéré sur la pile
+== % dépile et affiche la valeur dépilée
+
+showpage % fin du programme
